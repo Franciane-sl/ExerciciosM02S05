@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Exercício Validação de Formulário">
+  <title>Validação de Formulário</title>
+  <link rel="stylesheet" href="./validacaoDeFormulario.css">
+  <script src="./validacaoDeFormulario.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Formulário de Login</h1>
+    <form id="formulario" novalidate>
+      <div class="campo">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <p class="erro" id="erroEmail"></p>
+      </div>
+
+      <div class="campo">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <p class="erro" id="erroSenha"></p>
+      </div>
+
+      <button type="submit">Entrar</button>
+    </form>
+  </main>
+</body>
+</html>
